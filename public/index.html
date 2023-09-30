@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>Chat App</title>
+  </head>
+  <body>
+    <div id="chat-app-container">
+      <div id="home-page">
+        <h2>Welcome Ratha 😝</h2>
+        <label for="user-name">Name:</label>
+        <input
+          type="text"
+          id="user-name"
+          placeholder="E.g: Dhextras"
+          required
+        />
+
+        <label for="chat-room-id">Room ID:</label>
+        <input
+          type="text"
+          id="chat-room-id"
+          placeholder="E.g: ABC123"
+          required
+          onkeydown="handleKeyDown(event, 'joinChatRoom')"
+        />
+
+        <button id='join-room'onclick="joinChatRoom()">Enter Chat</button>
+      </div>
+      <div id="loading-screen" style="display: none">
+        <i class="fa-solid fa-spinner fa-spin fa-2xl"></i>
+      </div>
+
+      <div id="room-page" style="display: none">
+        <div id="room-top-bar">
+          <button id="leave-button" onclick="leaveRoom()">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <div id="room-info"></div>
+        </div>
+
+
+        <div id="message-container"></div>
+
+        <div id="message-input-container">
+          <input
+            type="text"
+            id="message-input"
+            placeholder="E.g: Hello, everyone!"
+            required
+            onkeydown="handleKeyDown(event, 'sendMessageToRoom')"
+          />
+          <button onclick="sendMessageToRoom()">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/46347494eb.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

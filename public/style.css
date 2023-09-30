@@ -1,0 +1,129 @@
+/* Overall Layout Styles */
+body {
+  display: flex;
+  background-color: rgb(41 36 67);
+  margin-top: 3%;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+#chat-app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  min-height: 90vh;
+  font-size: 24px;
+  background-color: rgb(204, 202, 202);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#home-page {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+/* User Input Section Styles */
+input[type="text"] {
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  margin-bottom: 22px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons Styles */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  color: black;
+  background-color: #3498db;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+#join-room {
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 50px;
+}
+
+button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+#room-page {
+  flex-direction: column;
+  gap: 15px;
+  width: 90%;
+}
+
+#room-top-bar {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* Chat Room Section Styles */
+#room-info {
+  display: flex;
+  background-color: #3498db;
+  color: black;
+  font-size: 22px;
+  padding: 5px 10px;
+  width: -webkit-fill-available;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+/* Message Container Styles */
+#message-container {
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fbfcfd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.message {
+  background-color: rgb(204, 202, 202);
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.message-text span {
+  font-size: 0.8em;
+  color: #555555;
+}
+
+/* Style the username separately */
+.message-text .username {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.message-text .time {
+  font-size: 0.5em;
+}
+
+/* Message Input Styles */
+#message-input {
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  width: calc(100% - 100px); /* Adjust width as needed */
+}
