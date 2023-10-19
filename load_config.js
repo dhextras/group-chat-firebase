@@ -8,7 +8,7 @@ function loadConfig() {
     console.error("\nError loading config.json:", error.message);
     console.log(
       "\nPlease follow step 4 of the installation instructions to solve this.",
-      "\n  - https://github.com/dhextras/Group-Chat-Firebase/#installation"
+      "\n  - https://github.com/dhextras/group-chat-firebase/#installation"
     );
     console.log("\nExiting...\n");
     process.exit(1);
