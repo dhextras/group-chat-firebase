@@ -12,7 +12,7 @@ This is a basic Web based Group Chat App, Created with Express and Firebase fire
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/dhextras/Group-Chat-Firebase.git && cd Group-Chat-Firebase/
+   git clone https://github.com/dhextras/group-chat-firebase.git && cd group-chat-firebase/
    ```
 
 2. Install dependencies:
