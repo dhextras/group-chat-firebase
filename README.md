@@ -8,6 +8,10 @@ This is a basic Web based Group Chat App, Created with Express and Firebase fire
 - Node.js and npm installed on your machine.
 - A Firebase Project.
 
+### Live Project
+
+- You can access the project online at [Group Chat Firbase](https://dhextras-chat.glitch.me).
+
 ### Installation
 
 1. Clone this repository:
