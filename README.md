@@ -2,15 +2,14 @@
 
 This is a basic Web based Group Chat App, Created with Express and Firebase firestore.
 
+### Live Project
+
+- You can access the project online at [Group Chat Firbase](https://dhextras-chat.glitch.me).
 
 ### Prerequisites
 
 - Node.js and npm installed on your machine.
 - A Firebase Project.
-
-### Live Project
-
-- You can access the project online at [Group Chat Firbase](https://dhextras-chat.glitch.me).
 
 ### Installation
 
